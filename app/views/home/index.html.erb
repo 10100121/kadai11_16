@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+
+<h1>ようこそ Bookersへ!</h1>
+
+
+     <p>Bookersでは、
+     	さまざまな書籍に関するあなたの意見や<br>
+        <br>
+        <br>
+　　　　印象を共有し交換する事ができます</p>
+     <%= link_to "start", books_path %>
+ </body>
+</html>
+
+
